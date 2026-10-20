@@ -1,0 +1,43 @@
+.container{
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* INPUT ESTILO GOOGLE */
+.container input {
+  width: 100%;
+  max-width: 480px;
+  height: 46px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #333;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 24px; /* Bordas arredondadas clássicas do Google */
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28); /* Sombra suave */
+  outline: none;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Efeito de foco quando o usuário clica para digitar */
+.container input:focus, 
+.container input:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(32, 33, 36, 0.35); /* Sombra mais intensa no foco */
+}
+
+/* Esconde o botão antigo caso queira focar apenas no Enter (Estética limpa) */
+.container button {
+  display: none; 
+}
+
